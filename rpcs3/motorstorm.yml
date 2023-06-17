@@ -1,0 +1,33 @@
+PPU-9f001199a7f23695cd41a2b25c1d0325da7565b5: 
+  Vehicle class select for every event:
+    Games: 
+      "Motorstorm":
+        BCES00006: [ All ]
+    Author: Scirvir
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x004fab54, 0x2fa3FFFF ]
+
+PPU-ce27dc64b44242beebb44c097449dd035de18e8b: 
+  Vehicle class select for every event:
+    Games: 
+      "Motorstorm Update 3.1 (Complete Edition)":
+        BCES00006: [ All ]
+        BCJS30019: [ All ]
+    Author: Scirvir
+    Notes: Campaign only. Doesn't work on DLC or online
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x005ff654, 0x2fa3FFFF ]
+
+PPU-e962bc16978b776063858254ae49aed7eac2a4f6:
+  Vehicle class select for every event:
+    Games: 
+      "Motorstorm":
+        BCUS98137: [ All ]
+    Author: Scirvir
+    Notes:
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x004fb330, 0x2fa3FFFF ]

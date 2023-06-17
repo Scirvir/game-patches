@@ -1,0 +1,18 @@
+PPU-a1f33132af387c49d452e64fcb0704cb06b6d084:
+  No Bounds in photo mode:
+    Games: 
+      "MotorStorm: Pacific Rift":
+        BCES00129: [ 01.03 ]
+        BCUS98155: [ 01.03 ]
+      "MotorStorm 2":
+        BCJS30027: [ 01.03 ]
+        BCAS20044: [ 01.03 ]
+    Author: Scirvir
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x003519d0, 0x489b5ea1 ]
+      - [ be32, 0x00d07870, 0x7dbad9ce ]
+      - [ be32, 0x00d07874, 0x392000f0 ]
+      - [ be32, 0x00d07878, 0x7c0349ce ]
+      - [ be32, 0x00d0787c, 0x4e800020 ]
