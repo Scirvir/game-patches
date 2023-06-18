@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA09559</ID>
+    </TitleID>
+    <Metadata Title="ONRUSH"
+              Name="No slowmo"
+              Note=""
+              Author="Scirvir"
+              PatchVer="1.0"
+              AppVer="05.00"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0xc01140" Value="9090909090909090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
