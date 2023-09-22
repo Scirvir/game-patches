@@ -20,6 +20,15 @@ PPU-ce27dc64b44242beebb44c097449dd035de18e8b:
     Patch Version: 1.0
     Patch:
       - [ be32, 0x005ff654, 0x2fa3FFFF ]
+  DebugFreeCam WIP:
+    Games: 
+      "Motorstorm Update 3.1 (Complete Edition)":
+        BCES00006: [ All ]
+    Author: Scirvir
+    Notes: 
+    Patch Version: 1.0
+    Patch:
+      - [ be32, 0x00225fe0, 0x4280f211 ]
 
 PPU-e962bc16978b776063858254ae49aed7eac2a4f6:
   Vehicle class select for every event:
