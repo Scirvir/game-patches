@@ -25,10 +25,10 @@ PPU-ce27dc64b44242beebb44c097449dd035de18e8b:
       "Motorstorm Update 3.1 (Complete Edition)":
         BCES00006: [ All ]
     Author: Scirvir
-    Notes: Fly around indefinitely before race starts. Vehicles don't move. Doesn't work on all tracks/events
-    Patch Version: 1.0
+    Notes: Triggers upon race start. AI vehicles move. You control your vehicle and the camera at the same time. Works on all tracks/events tho makes the fps plummet on some.
+    Patch Version: 2.0
     Patch:
-      - [ be32, 0x00225fe0, 0x4280f211 ]
+      - [be32, 0x00226560, 0x4280ec91 ]
 
 PPU-e962bc16978b776063858254ae49aed7eac2a4f6:
   Vehicle class select for every event:
