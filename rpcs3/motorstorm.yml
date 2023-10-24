@@ -25,7 +25,7 @@ PPU-ce27dc64b44242beebb44c097449dd035de18e8b:
       "Motorstorm Update 3.1 (Complete Edition)":
         BCES00006: [ All ]
     Author: Scirvir
-    Notes: Triggers upon race start. AI vehicles move. You control your vehicle and the camera at the same time. Works on all tracks/events tho makes the fps plummet on some.
+    Notes: Triggers upon race start. AI vehicles move. You control your vehicle and the camera at the same time. Works on all tracks/events.
     Patch Version: 2.0
     Patch:
       - [be32, 0x00226560, 0x4280ec91 ]
