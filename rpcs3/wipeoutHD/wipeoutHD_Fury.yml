@@ -1,0 +1,12 @@
+PPU-b1c6a86617b246b2df74dbe90f8400cd3809d4dc:
+  No limits on photo mode WIP:
+    Games: 
+      "WipEout HD":
+        BCES00664: [ 02.00 ]
+    Author: Scirvir
+    Notes: No limit to zoom nor pan, camera still has collision
+    Patch Version: 1.0
+    Patch:
+      - [be32, 0x000a9a40, 0xfda1086e ] # pan v
+      - [be32, 0x000aa700, 0xfda1086e ] # pan h
+      - [be32, 0x000aa75c, 0xfda1086e ] # zoom
