@@ -15,3 +15,17 @@ PPU-a1f33132af387c49d452e64fcb0704cb06b6d084:
       - [ be32, 0x00d07874, 0x392000f0 ]
       - [ be32, 0x00d07878, 0x7c0349ce ]
       - [ be32, 0x00d0787c, 0x4e800020 ]
+
+PPU-a1f33132af387c49d452e64fcb0704cb06b6d084:
+  No pausing:
+    Games: 
+      "MotorStorm: Pacific Rift (MotorStorm 2)":
+        BCES00129: [ 01.03 ]
+        BCUS98155: [ 01.03 ]
+        BCJS30027: [ 01.03 ]
+        BCAS20044: [ 01.03 ]
+    Author: Scirvir
+    Notes:  
+    Patch Version: 1.0
+    Patch:
+      - [ utf8, 0x00d1bbd8, "\x00" ]
