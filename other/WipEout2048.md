@@ -11,5 +11,5 @@ Patch for 'eboot.bin' by [u/Azrael1981](https://www.reddit.com/user/Azrael1981/)
 | Offset | Original | Patch |
 |-|-|-|
 | 0x2F7D06 | BEF1000F12D1 | FCF022E812E0 |
-| 0x2F7D46 | 8042 | 002D |
+| 0x2F7D46 | 002D | 8042 |
 ---
