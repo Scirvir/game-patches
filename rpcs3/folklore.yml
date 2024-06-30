@@ -1,0 +1,53 @@
+Anchors:
+  folkloreESUS_110_nosixaxis: &folkloreESUS_110_nosixaxis
+    # .bPlayerPad::CheckCaptureFinish
+    - [ be32, 0x000f8698, 0x38600001 ]
+    - [ be32, 0x000f86c8, 0x38600001 ]
+    # UpdateAction_Timing
+    - [ be32, 0x00104664, 0x428006b0 ]
+    - [ be32, 0x00104d14, 0x817f010c ]
+    - [ be32, 0x00104d18, 0x42800018 ]
+    - [ be32, 0x00104d30, 0x396b0003 ]
+    - [ be32, 0x00104d34, 0x917f010c ]
+    # UpdateAction_Balance
+    - [ be32, 0x001034c4, 0x42800334 ]
+    - [ be32, 0x001037f8, 0x817e010c ]
+    - [ be32, 0x001037fc, 0x4280001c ]
+    - [ be32, 0x00103818, 0x396b0003 ]
+    - [ be32, 0x0010381c, 0x917e010c ]
+    # UpdateAction_Beat
+    - [ be32, 0x00103014, 0x428000dc ]
+    - [ be32, 0x001030f0, 0x817f010c ]
+    - [ be32, 0x001030f4, 0x42800018 ]
+    - [ be32, 0x0010310c, 0x396b0003 ]
+    - [ be32, 0x00103110, 0x917f010c ]
+    # UpdateAction_SAD
+    - [ be32, 0x00103f34, 0x42800470 ]
+    - [ be32, 0x001043a4, 0x817e010c ]
+    - [ be32, 0x001043a8, 0x42800018 ]
+    - [ be32, 0x001043c0, 0x396b0003 ]
+    - [ be32, 0x001043c4, 0x917e010c ]
+  folklore_nosixaxis_notes: &folklore_nosixaxis_notes
+    "Allows gameplay on keyboard and controllers without motion sensors. Can't absorb multiple folk at once meaning lower XP gains."
+
+PPU-66404421d1f8ed7dd0b2898e1d015a44bf273bf8:
+  "Autocomplete motion control sequences":
+    Games:
+      "Folklore":
+        BCES00050: [ 01.00 ]
+    Author: "Scirvir"
+    Notes: *folklore_nosixaxis_notes
+    Patch Version: 1.0
+    Patch:
+      - [ load, *folkloreESUS_100_nosixaxis ]
+
+PPU-eb05d70d23d075ef6d9c81f7e7cf9bffc98c404c:
+  "Autocomplete motion control sequences":
+    Games:
+      "Folklore":
+        BCUS98147: [ 01.00 ]
+    Author: "Scirvir"
+    Notes: *folklore_nosixaxis_notes
+    Patch Version: 1.0
+    Patch:
+      - [ load, *folkloreESUS_100_nosixaxis ]
