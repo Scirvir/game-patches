@@ -1,5 +1,5 @@
 Anchors:
-  folkloreESUS_110_nosixaxis: &folkloreESUS_110_nosixaxis
+  folkloreESUS_100_nosixaxis: &folkloreESUS_100_nosixaxis
     # .bPlayerPad::CheckCaptureFinish
     - [ be32, 0x000f8698, 0x38600001 ]
     - [ be32, 0x000f86c8, 0x38600001 ]
@@ -27,6 +27,34 @@ Anchors:
     - [ be32, 0x001043a8, 0x42800018 ]
     - [ be32, 0x001043c0, 0x396b0003 ]
     - [ be32, 0x001043c4, 0x917e010c ]
+  folkloreESUS_110_nosixaxis: &folkloreESUS_110_nosixaxis
+    # .bPlayerPad::CheckCaptureFinish
+    - [ be32, 0x000f88e8, 0x38600001 ]
+    - [ be32, 0x000f8918, 0x38600001 ]
+    # UpdateAction_Timing
+    - [ be32, 0x00104e2c, 0x428008f8 ]
+    - [ be32, 0x00105724, 0x817f0124 ]
+    - [ be32, 0x00105728, 0x4280001c ]
+    - [ be32, 0x00105740, 0x396b0003 ]
+    - [ be32, 0x00105744, 0x917f0124 ]
+    # UpdateAction_Balance
+    - [ be32, 0x001034c4, 0x428000c4 ]
+    - [ be32, 0x00103f40, 0x817f0124 ]
+    - [ be32, 0x00103f44, 0x4280001c ]
+    - [ be32, 0x00103f60, 0x396b0003 ]
+    - [ be32, 0x00103f64, 0x917f0124 ]
+    # Beat_RegularDamage
+    - [ be32, 0x00102dac, 0x4280ff30 ]
+    - [ be32, 0x00102cdc, 0x817e010c ]
+    - [ be32, 0x00102ce0, 0x4280001c ]
+    - [ be32, 0x00102cfc, 0x396b0003 ]
+    - [ be32, 0x00102d00, 0x917e0124 ]
+    # UpdateAction_SAD
+    - [ be32, 0x00103f34, 0x4280ff90 ]
+    - [ be32, 0x00104b14, 0x817e0124 ]
+    - [ be32, 0x00104b18, 0x42800018 ]
+    - [ be32, 0x00104b30, 0x396b0003 ]
+    - [ be32, 0x00104b34, 0x917e0124 ]
   folklore_nosixaxis_notes: &folklore_nosixaxis_notes
     "Allows gameplay on keyboard and controllers without motion sensors. Can't absorb multiple folk at once meaning lower XP gains."
 
@@ -41,6 +69,17 @@ PPU-66404421d1f8ed7dd0b2898e1d015a44bf273bf8:
     Patch:
       - [ load, *folkloreESUS_100_nosixaxis ]
 
+PPU-bfad65ed0963e68cebafdf24d00201005ad3a17e:
+  "Autocomplete motion control sequences":
+    Games:
+      "Folklore":
+        BCES00050: [ 01.10 ]
+    Author: "Scirvir"
+    Notes: *folklore_nosixaxis_notes
+    Patch Version: 1.0
+    Patch:
+      - [ load, *folkloreESUS_110_nosixaxis ]
+
 PPU-eb05d70d23d075ef6d9c81f7e7cf9bffc98c404c:
   "Autocomplete motion control sequences":
     Games:
@@ -51,3 +90,51 @@ PPU-eb05d70d23d075ef6d9c81f7e7cf9bffc98c404c:
     Patch Version: 1.0
     Patch:
       - [ load, *folkloreESUS_100_nosixaxis ]
+
+PPU-9b16663fa1aa1dd62c2c6bfee4f333242dde4171:
+  "Autocomplete motion control sequences":
+    Games:
+      "Folklore":
+        BCUS98147: [ 01.10 ]
+    Author: "Scirvir"
+    Notes: *folklore_nosixaxis_notes
+    Patch Version: 1.0
+    Patch:
+      - [ load, *folkloreESUS_110_nosixaxis ]
+
+PPU-53bbd55f666d64261074150bf9a5a7ab80ba6dea:
+  "Autocomplete motion control sequences":
+    Games:
+      "フォークスソウル -失われた伝承-":
+        BCJS30009: [ 01.10 ]
+    Author: "Scirvir"
+    Notes: *folklore_nosixaxis_notes
+    Patch Version: 1.0
+    Patch:
+    # .bPlayerPad::CheckCaptureFinish
+      - [ be32, 0x000f886c, 0x38600001 ]
+      - [ be32, 0x000f889c, 0x38600001 ]
+    # UpdateAction_Balance
+      - [ be32, 0x00103e00, 0x428000c4 ]
+      - [ be32, 0x00103ec4, 0x817f0124 ]
+      - [ be32, 0x00103ec8, 0x4280001c ]
+      - [ be32, 0x00103ee8, 0x396b0003 ]
+      - [ be32, 0x00103eec, 0x917f0124 ]
+    # UpdateAction_SAD
+      - [ be32, 0x00104b08, 0x42800384 ]
+      - [ be32, 0x00104a98, 0x817e0124 ]
+      - [ be32, 0x00104a8c, 0x42800018 ]
+      - [ be32, 0x00104ab8, 0x396b0003 ]
+      - [ be32, 0x00104abc, 0x917e0124 ]
+    # Beat_RegularDamage
+      - [ be32, 0x00102d30, 0x4280ff30 ]
+      - [ be32, 0x00102c60, 0x817e0124 ]
+      - [ be32, 0x00102c64, 0x4280001c ]
+      - [ be32, 0x00102c80, 0x396b0003 ]
+      - [ be32, 0x00102c84, 0x917e0124 ]
+    # UpdateAction_Timing
+      - [ be32, 0x00104db0, 0x428008f8 ]
+      - [ be32, 0x001056a8, 0x817f0124 ]
+      - [ be32, 0x001056ac, 0x42800018 ]
+      - [ be32, 0x001056c4, 0x396b0003 ]
+      - [ be32, 0x001056c8, 0x917f0124 ]
