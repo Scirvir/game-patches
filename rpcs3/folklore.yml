@@ -45,7 +45,7 @@ Anchors:
     - [ be32, 0x00103f64, 0x917f0124 ]
     # Beat_RegularDamage
     - [ be32, 0x00102dac, 0x4280ff30 ]
-    - [ be32, 0x00102cdc, 0x817e010c ]
+    - [ be32, 0x00102cdc, 0x817e0124 ]
     - [ be32, 0x00102ce0, 0x4280001c ]
     - [ be32, 0x00102cfc, 0x396b0003 ]
     - [ be32, 0x00102d00, 0x917e0124 ]
